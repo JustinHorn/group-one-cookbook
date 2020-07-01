@@ -1,41 +1,107 @@
-/* Slideshow container */
-[name="justin"] .slideshow-container {
-  position: relative;
+#slider {
+  margin: 0;
   padding: 0;
+  background: #f1f1f1;
+  font-family: sans-serif;
 }
 
-[name="justin"] img {
-  padding: 0px;
-  margin: 0px;
-  width: inherit;
+.fill {
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
 }
 
-/* Next & previous buttons */
-[name="justin"] .prev,
-[name="justin"] .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
+.slider {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+.slide {
+  width: 500%;
+  overflow: hidden;
+  animation: slider 20s infinite;
+}
+.slide div {
+  width: 20%;
   color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  height: 500px;
+  text-transform: uppercase;
 }
-
-/* Position the "next button" to the right */
-[name="justin"] .next {
-  right: 5%;
-  border-radius: 3px 0 0 3px;
+.slide1 {
+  background: #e74c3c;
+  background-image: url("img/slider/img1.jpg");
 }
-
-/* On hover, add a grey background color */
-[name="justin"] .prev:hover,
-[name="justin"] .next:hover {
-  background-color: #f1f1f1;
-  color: black;
+.slide2 {
+  background: #3498db;
+  background-image: url("img/slider/img2.jpg");
+}
+.slide3 {
+  background: #2ecc71;
+  background-image: url("img/slider/img3.jpg");
+}
+.slide4 {
+  background: #9b59b6;
+  background-image: url("img/slider/img4.jpg");
+}
+.slide5 {
+  background: #2c3e50;
+  background-image: url("/to/image.jpg");
+}
+@keyframes slider {
+  0% {
+    margin-left: 0;
+  }
+  10% {
+    margin-left: 0;
+  }
+  12% {
+    margin-left: -100%;
+  }
+  22% {
+    margin-left: -100%;
+  }
+  24% {
+    margin-left: -200%;
+  }
+  34% {
+    margin-left: -200%;
+  }
+  36% {
+    margin-left: -300%;
+  }
+  46% {
+    margin-left: -300%;
+  }
+  48% {
+    margin-left: -400%;
+  }
+  58% {
+    margin-left: -400%;
+  }
+  60% {
+    margin-left: -300%;
+  }
+  70% {
+    margin-left: -300%;
+  }
+  72% {
+    margin-left: -200%;
+  }
+  82% {
+    margin-left: -200%;
+  }
+  84% {
+    margin-left: -100%;
+  }
+  94% {
+    margin-left: -100%;
+  }
+  96% {
+    margin-left: 0;
+  }
 }
