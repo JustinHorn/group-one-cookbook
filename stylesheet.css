@@ -1,0 +1,80 @@
+
+  
+  .social-network  {
+    display: flex;
+    justify-content: center;
+    background-color: #4b99a3;
+    
+    
+
+  }
+  
+  
+  [name = "jakub"] .social-network a.icoFacebook:hover {
+    background-color: #3B5998;
+  }
+  
+  [name = "jakub"] .social-network a.icoLinkedin:hover {
+    background-color: #007bb7;
+  }
+  [name = "jakub"] .social-network a.icoTwitter:hover {
+    background-color: #5fc1f1;
+  }
+  [name = "jakub"] .social-network a.icoWhatsapp:hover {
+    background-color: #068927;
+  }
+  [name = "jakub"] .social-network a.icoInstagram:hover {
+    background-color: #833AB4;
+  }
+
+  [name = "jakub"] .social-network a.icoFacebook:hover i,
+  [name = "jakub"] .social-network a.icoLinkedin:hover i,
+  [name = "jakub"] .social-network a.icoTwitter:hover i,
+  [name = "jakub"] .social-network a.icoWhatsapp:hover i,
+  [name = "jakub"] .social-network a.icoInstagram:hover i {
+    color: #fff;
+  }
+ 
+  
+ 
+  
+  [name = "jakub"] .social-circle  a {
+    display: inline-block;
+    position: relative;
+    margin: 2em auto;
+    border-radius: 50%;
+    text-align: center;
+    width: 2em;
+    height: 2em;
+    font-size: 2em;
+    text-decoration: none;
+  }
+  
+
+  [name = "jakub"] .social-circle  i {
+    margin: 0;
+    line-height: 2em;
+    text-align: center;
+  }
+  
+  [name = "jakub"] .social-circle  a:hover i,
+  [name = "jakub"] .triggeredHover {
+    transform: rotate(360deg);
+    transition: all 0.7s;
+    
+  }
+  
+  [name = "jakub"] .social-circle i {
+    color: #595959;
+    transition: all 1.0s;
+  }
+  
+  [name = "jakub"] .social-network a {
+    background-color: #F9F9F9;
+  }
+  [name = "jakub"] .text-center {
+    align-self: flex-end;
+    font-weight: 600;
+    background-color: #4b99a3;
+    
+  }
