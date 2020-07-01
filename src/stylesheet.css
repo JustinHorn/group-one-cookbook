@@ -1,0 +1,41 @@
+/* Slideshow container */
+[name="justin"] .slideshow-container {
+  position: relative;
+  padding: 0;
+}
+
+[name="justin"] img {
+  padding: 0px;
+  margin: 0px;
+  width: inherit;
+}
+
+/* Next & previous buttons */
+[name="justin"] .prev,
+[name="justin"] .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+[name="justin"] .next {
+  right: 5%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+[name="justin"] .prev:hover,
+[name="justin"] .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
