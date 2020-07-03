@@ -2,8 +2,8 @@
 [name="neo"] .container-nav {
   display: grid;
   grid-template-columns: 1fr;
-  background-color: #393E46;
-  color: white
+  background-color: #393e46;
+  color: white;
 }
 
 [name="neo"] .nav-wrapper {
@@ -18,7 +18,7 @@
   text-transform: uppercase;
   font-size: 1rem;
 }
-  
+
 [name="neo"] .nav-link-wrapper {
   height: 22px;
   border-bottom: 1px solid transparent;
@@ -30,7 +30,7 @@
 }
 
 [name="neo"] .active-nav-link a {
-  color:#abf0e9 !important;
+  color: #abf0e9 !important;
 }
 
 [name="neo"] .nav-link-wrapper a {
@@ -46,7 +46,6 @@
 [name="neo"] .nav-link-wrapper a:hover {
   color: #abf0e9;
 }
-
 
 /* Logo*/
 [name="neo"] .container-logo {
@@ -94,24 +93,26 @@
 }
 [name="justin"] .slide1 {
   background: #e74c3c;
-  background-image: url("img/slider/img1.jpg");
+  background-image: url("slider/img.jpg");
 }
 [name="justin"] .slide2 {
   background: #3498db;
-  background-image: url("img/slider/img2.jpg");
+  background-image: url("slider/img2.jpg");
 }
 [name="justin"] .slide3 {
   background: #2ecc71;
-  background-image: url("img/slider/img3.jpg");
+  background-image: url("slider/img3.jpg");
 }
 [name="justin"] .slide4 {
   background: #9b59b6;
-  background-image: url("img/slider/img4.jpg");
+  background-image: url("slider/img4.jpg");
 }
+
 [name="justin"] .slide5 {
-  background: #2c3e50;
-  background-image: url("/to/image.jpg");
+  background: #e74c3c;
+  background-image: url("slider/img.jpg");
 }
+
 @keyframes slider {
   0% {
     margin-left: 0;
@@ -234,4 +235,3 @@
   font-weight: 600;
   background-color: #4b99a3;
 }
-
