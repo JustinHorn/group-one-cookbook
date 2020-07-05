@@ -10,6 +10,7 @@
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  margin-left: 30px;
   width: fit-content;
 }
 
@@ -88,19 +89,24 @@
 
 /*Recipe Layout*/
 
-[name="neo"] .container-3column-meal {
+[name="neo"] .container-recipe-title {
+  background-color: #abf0e9;
+  margin-top: 50px;
+  box-shadow: 3px 3px 3px #888888;
 }
 
-[name="neo"] .container-recipe-title {
-  margin-top: 50px;
+[name="neo"] .container-recipe-title h1 {
+  margin-left: 50px;
   padding: 10px;
-  background-color: #abf0e9;
 }
+
 
 [name="neo"] .container-main-content {
   display: grid;
   grid-template-columns: 3fr 1fr 2fr;
-  margin-top: 30px;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 [name="neo"] .recipe-img {
@@ -124,6 +130,19 @@ box-shadow: 5px 5px 5px 5px #888888;
   background-repeat: no-repeat;
 }
 
+[name="neo"] .container-recipe-grids {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+  height: 200px;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+[name="neo"] .container-recipe-grid {
+  padding: 20px;
+}
 
 [name="justin"] #slider {
   margin: 0;
