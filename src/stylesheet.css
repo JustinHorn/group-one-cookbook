@@ -71,9 +71,21 @@
   color: #393e46;
   font-weight: bold;
   align-self: center;
-  margin-left: 10px;
-  
+  margin-left: 10px; 
 }
+
+/* BUttons */
+[name="neo"] .btn-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+[name="neo"] .btn {
+  font-size: 30px;
+  margin: 50px;
+}
+
 
 [name="justin"] #slider {
   margin: 0;
