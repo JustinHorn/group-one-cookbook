@@ -67,7 +67,7 @@
 }
 
 [name="neo"] .logo-wrapper h1 {
-  font-size: 30px;
+  font-size: 50px;
   color: #393e46;
   font-weight: bold;
   align-self: center;
@@ -84,6 +84,44 @@
 [name="neo"] .btn {
   font-size: 30px;
   margin: 50px;
+}
+
+/*Recipe Layout*/
+
+[name="neo"] .container-3column-meal {
+}
+
+[name="neo"] .container-recipe-title {
+  margin-top: 50px;
+  padding: 10px;
+  background-color: #abf0e9;
+}
+
+[name="neo"] .container-main-content {
+  display: grid;
+  grid-template-columns: 3fr 1fr 2fr;
+  margin-top: 30px;
+}
+
+[name="neo"] .recipe-img {
+box-shadow: 5px 5px 5px 5px #888888;
+}
+
+[name="neo"] .main-content-wrapper {
+  padding: 10px;
+}
+
+[name="neo"] .main-content-wrapper h3 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+[name="neo"] .recipe-img {
+  width: auto%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
