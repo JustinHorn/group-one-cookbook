@@ -348,6 +348,7 @@
 .break {
   display: inline;
   text-align: center;
+  padding-top: 2em;
 }
 
 .pics img {
