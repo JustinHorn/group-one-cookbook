@@ -2,28 +2,27 @@ loadMeals();
 
 function loadMeals() {
   let params = new URLSearchParams(location.search);
-  const lunchType = params.get("meal");
-  const ajaxFolder = "src/meals/" + lunchType + "/";
-  $.ajax({
-    url: ajaxFolder,
-    success: function (data) {
+  const mealType = params.get("meal");
+  const typeFolderPath = "src/meals/" + mealType + "/";
+  $.ajax(typeFolderPath).then(
+    function success(data) {
       $(data)
         .find("a:contains(/)") // is folder
         .each(function () {
           const folderName = hrefToFolderName(this.href);
-          const recipe = ajaxFolder + folderName;
+          const recipeFolderPath = typeFolderPath + folderName;
 
-          $.get(recipe + "/info.json").then((data) => {
+          $.get(recipeFolderPath + "/info.json").then((data) => {
             data.name = folderName;
-            data.imgSrc = recipe + "/img.jpg";
+            data.imgSrc = recipeFolderPath + "/img.jpg";
             addToHTML(1, data);
           });
         });
     },
-    error: function (err, data) {
+    function fail(err, data) {
       console.log(err);
-    },
-  });
+    }
+  );
 }
 
 function hrefToFolderName(url) {
