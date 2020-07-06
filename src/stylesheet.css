@@ -110,7 +110,7 @@
 }
 
 [name="neo"] .recipe-img {
-box-shadow: 5px 5px 5px 5px #888888;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 [name="neo"] .main-content-wrapper {
@@ -123,7 +123,7 @@ box-shadow: 5px 5px 5px 5px #888888;
 }
 
 [name="neo"] .recipe-img {
-  width: auto%;
+  width: auto;
   height: 500px;
   background-size: cover;
   background-position: center;
