@@ -251,3 +251,68 @@
   /*background-color: #4b99a3;  */
 }
 
+/*Recipe Layout*/
+
+.htag {
+  margin-top: -1em;
+  padding-bottom: em;
+}
+
+.break {
+  display: inline;
+  text-align: center;
+}
+
+.pics img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border: 0.1em solid #ece9e9 ;
+  border-radius: 5%;
+}
+.riw p {
+  text-align: center;
+}
+.riw h3 {
+  padding-top: 0.5em;
+  text-align: center;
+}
+.down {  
+  padding-top: 2em;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+  .pics  {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .pics  {
+    flex: 100%;
+    max-width: 100%;
+    
+  }
+  .logo-wrapper img {
+    flex: 20%;
+    max-width: 20%;
+  }
+  .htag {
+    font-size: small;
+  }
+  .contflex {
+    margin-top: -7em;
+  }
+  .htag {
+    font-size: 2em;
+  }
+  .down {
+    padding-top: 0em;
+  }
+}
