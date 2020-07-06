@@ -10,6 +10,7 @@
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  margin-left: 30px;
   width: fit-content;
 }
 
@@ -17,6 +18,7 @@
   margin-right: 20px;
   text-transform: uppercase;
   font-size: 1rem;
+  font-weight: bold;
 }
 
 [name="neo"] .nav-link-wrapper {
@@ -49,12 +51,97 @@
 
 /* Logo*/
 [name="neo"] .container-logo {
-  height: 250px;
+  display: flex;
+  justify-content: center;
+  height: 140px;
+}
+
+[name="neo"] .logo-wrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
 }
 
 [name="neo"] .logo-wrapper img {
-  width: 200px;
-  margin-top: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+[name="neo"] .logo-wrapper h1 {
+  font-size: 50px;
+  color: #393e46;
+  font-weight: bold;
+  align-self: center;
+  margin-left: 10px; 
+}
+
+/* BUttons */
+[name="neo"] .btn-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+[name="neo"] .btn {
+  font-size: 30px;
+  margin: 50px;
+}
+
+/*Recipe Layout*/
+
+[name="neo"] .container-recipe-title {
+  background-color: #abf0e9;
+  margin-top: 50px;
+  box-shadow: 3px 3px 3px #888888;
+}
+
+[name="neo"] .container-recipe-title h1 {
+  margin-left: 50px;
+  padding: 10px;
+}
+
+
+[name="neo"] .container-main-content {
+  display: grid;
+  grid-template-columns: 3fr 1fr 2fr;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+[name="neo"] .recipe-img {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+[name="neo"] .main-content-wrapper {
+  padding: 10px;
+}
+
+[name="neo"] .main-content-wrapper h3 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+[name="neo"] .recipe-img {
+  width: auto;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+[name="neo"] .container-recipe-grids {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+  height: 200px;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+[name="neo"] .container-recipe-grid {
+  padding: 20px;
 }
 
 [name="justin"] #slider {
