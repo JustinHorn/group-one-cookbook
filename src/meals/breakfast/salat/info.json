@@ -1,3 +1,5 @@
 {
-  "description": "Lorem Ipsum"
+  "description": "Inspired by my old-favourite Midnight pan-cooked breakfast, this recipe is all about the principle of cooking breakfast in one pan.",
+  "steps": ["step1", "step2", "..."],
+  "ingredients": []
 }
