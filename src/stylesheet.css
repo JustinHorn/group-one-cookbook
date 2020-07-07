@@ -26,28 +26,54 @@
   border-bottom: 1px solid transparent;
   transition: border-bottom 0.5s;
 }
-
+/* better without
 [name="neo"] .active-nav-link {
   border-bottom: 1px solid #abf0e9;
 }
-
+*/
 [name="neo"] .active-nav-link a {
   color: #abf0e9 !important;
 }
+/*dropdown*/
+[name="neo"] .dropdown .dropbtn {
+  background-color: inherit;
+  font-family: inherit;
+  font-weight: bold;
+  text-transform: uppercase;
+  align-self: center;
+}
+[name="neo"] .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #393e46;
+  min-width: 160px;
+  z-index: 1;
+}
+[name="neo"] .dropdown:hover .dropbtn {
+  background-color: inherit;
+  color: #abf0e9;
+}
+[name="neo"] .dropdown:hover .dropdown-content a {
+  background-color: #393e46;
+}
+
+  /*dropdown end*/
 
 [name="neo"] .nav-link-wrapper a {
   color: white;
   text-decoration: none;
   transition: color 0.5s;
 }
-
+/* it's better without this
 [name="neo"] .nav-link-wrapper:hover {
   border-bottom: 1px solid #abf0e9;
 }
+*/
 
 [name="neo"] .nav-link-wrapper a:hover {
   color: #abf0e9;
 }
+
 
 /* Logo*/
 [name="neo"] .container-logo {
@@ -57,7 +83,7 @@
 }
 
 [name="neo"] .logo-wrapper {
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
   flex-direction: row;
 }
@@ -338,16 +364,14 @@
   /*background-color: #4b99a3;  */
 }
 
-/*Recipe Layout*/
+/*Recipes*/
 
-.htag {
-  margin-top: -1em;
-  padding-bottom: em;
-}
+
 
 .break {
   display: inline;
   text-align: center;
+ 
 }
 
 .pics img {
@@ -367,6 +391,43 @@
 .down {  
   padding-top: 2em;
 }
+
+/* dropdown button */
+.dropbtn {
+  background-color: inherit;
+  color: white;
+  border: none;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  font-size: 1rem;
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: #393e46;
+  padding: 1em 1em;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {color: #abf0e9;}
 
 
 
@@ -388,18 +449,20 @@
   }
   .logo-wrapper img {
     flex: 20%;
-    max-width: 20%;
+    max-width: 100%;
   }
   .htag {
     font-size: small;
   }
-  .contflex {
-    margin-top: -7em;
-  }
+  
   .htag {
     font-size: 2em;
   }
   .down {
     padding-top: 0em;
   }
+  .logo-wrapper h1 {
+    display: none;
+  }
+ 
 }
