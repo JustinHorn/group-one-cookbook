@@ -25,7 +25,7 @@ function makeMealColumn(meal) {
   div.className = "col-md-4 col-12 pics";
 
   const a = document.createElement("a");
-  a.href = "recipe.html?name=" + meal.name;
+  a.href = "recipeJS.html?name=" + meal.name;
 
   const img = document.createElement("img");
   img.src = meal.imgSrc;
