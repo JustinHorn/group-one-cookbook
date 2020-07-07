@@ -26,11 +26,11 @@
   border-bottom: 1px solid transparent;
   transition: border-bottom 0.5s;
 }
-
+/* better without
 [name="neo"] .active-nav-link {
   border-bottom: 1px solid #abf0e9;
 }
-
+*/
 [name="neo"] .active-nav-link a {
   color: #abf0e9 !important;
 }
