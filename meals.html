@@ -23,9 +23,11 @@
     <link rel="stylesheet" type="text/css" href="src/stylesheet.css" />
     <link rel="stylesheet" type="text/css" href="./stylesheet.css" />
 
-    <title>Meals</title>
+    <title id="title">Breakfast</title>
   </head>
   <body>
+    <div class="row" id="appendHere"></div>
+
     <section name="neo">
       <div class="container-nav">
         <div class="nav-wrapper">
@@ -52,12 +54,12 @@
       <div class="container contflex">
         <div class="row">
           <div class="col-12 break">
-            <h1 class="htag">Breakfast</h1>
+            <h1 class="htag" id="headline">Breakfast</h1>
           </div>
         </div>
 
-        <div class="row riw">
-          <div class="col-md-4 col-12 pics">
+        <div class="row riw" id="putMealsHere">
+          <div class="col-md-4 col-12 pics" style="display: none;">
             <img src="./src/breakfast/onepan.jpg" />
             <h3>One-pan breakfast</h3>
             <p class="down">
@@ -65,7 +67,7 @@
               recipe is all about the principle of cooking breakfast in one pan.
             </p>
           </div>
-          <div class="col-md-4 col-12 pics">
+          <div class="col-md-4 col-12 pics" style="display: none;">
             <img src="./src/breakfast/eggmango.jpg" />
             <h3>Egg & mango chutney flatbreads</h3>
             <p>
@@ -73,7 +75,7 @@
               friends and family. Combination of mango and egg is amazing.
             </p>
           </div>
-          <div class="col-md-4 col-12 pics">
+          <div class="col-md-4 col-12 pics" style="display: none;">
             <img src="./src/breakfast/salmon.jpg" />
             <h3>Smoked salmon toasts</h3>
             <p class="down">
@@ -102,6 +104,7 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
-    <script src="src/loadMeals.js"></script>
+    <script src="src/meals.js"></script>
+    <script src="src/createMeals.js"></script>
   </body>
 </html>
