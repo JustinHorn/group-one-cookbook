@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="./stylesheet.css">
         
-        <title>Recipe layout</title>
+        <title id="title">One-pan breakfast</title>
     </head>
     <body>
  
@@ -46,32 +46,21 @@
     
             <div class="container-3column-meal">
                 <div class="container-recipe-title">
-                        <h1>Pancakes</h1>
+                        <h1 id="recipeName">Pancakes</h1>
                 </div>
                 <div class="container-main-content">
                     <div class="main-content-wrapper">
-                        <div class="recipe-img" style="background-image:url(src/mealImages/b-pancakes.jpg)"></div>
+                        <div id="recipeImg" class="recipe-img" style="background-image:url(src/mealImages/b-pancakes.jpg)"></div>
                     </div>
-                    <div class="main-content-wrapper">
+                    <div class="main-content-wrapper" >
                         <h3>Ingredients</h3>
-                        <ul>
-                            <li>100g flour</li>
-                            <li>3 eggs flour</li>
-                            <li>100ml milk</li>
-                            <li>50g butter milk</li>
-                            <li>Variety of berries</li>
-                            <li>Chocolate syrup</li>
-                            <li>1tsp salt</li>
+                        <ul id="ingredients">
+                  
                         </ul>
                     </div>
                     <div class="main-content-wrapper">
                         <h3>Procedure</h3>
-                        <ol>
-                            <li>Beat the eggs and then mix flour, milk and salt into it.</li>
-                            <li>Heat up the pan with some butter</li>
-                            <li>Use a big laddle and spread a scoop of it on the pan.</li>
-                            <li>Fry 2 minutes on each sides.</li>
-                            <li>Add fresh berries and chocolate syrup on them before serving.</li>
+                        <ol id="steps"> 
                         </ol>
                     </div>    
                 </div>
@@ -94,6 +83,8 @@
     
             </div>
         </section>
+        <script src="src/meals.js"></script>
+        <script src="src/loadRecipe.js"></script>
     </body> 
 
 </html>
