@@ -29,6 +29,7 @@ function makeMealColumn(meal) {
 
   const img = document.createElement("img");
   img.src = meal.imgSrc;
+  img.className = "card-1";
 
   a.appendChild(img);
 

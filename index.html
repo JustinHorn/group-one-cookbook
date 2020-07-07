@@ -23,16 +23,31 @@
   <section name="neo">
     <div class="container-nav">
       <div class="nav-wrapper">
-        <div class="nav-link-wrapper active-nav-link">
+        <div class="nav-link-wrapper">
           <a href="index.html">HOME</a>
         </div>
-        <div class="nav-link-wrapper">
-          <a href="shop.html">BUY BOOK</a>
+        <div class="nav-link-wrapper dropdown">
+          <a href="#" class="dropbtn dropdown">RECIPES</a>
+          <div class="dropdown-content">
+            <a href="meals.html?meal=Breakfast">Breakfast</a>
+            <a href="meals.html?meal=Lunch">Lunch</a>
+            <a href="meals.html?meal=Dinner">Dinner</a>
+          </div>
         </div>
         <div class="nav-link-wrapper">
           <a href="about.html">ABOUT</a>
         </div>
       </div>
+    </div>
+
+    <button class="dropbtn">
+      Dropdown
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
     </div>
     <div class="container-logo">
       <div class="logo-wrapper">
@@ -75,7 +90,7 @@
             <div class="container">
               <div class="row">
                 <div class="col-2"></div>
-                <div class="col-12 col-lg-4 about ">
+                <div id="aboutsection" class="col-12 col-lg-4 about ">
                   <img class="chef" src="./src/about/meal-41130_1280.png">
                 </div>
                 <div class="col-12 col-lg-4  about2">
