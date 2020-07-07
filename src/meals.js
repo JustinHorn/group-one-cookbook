@@ -10,7 +10,6 @@ function Meal(mealType, imgSrc, name, description, steps, ingredients) {
 }
 
 /*MAIN*/
-
 const meals = [];
 
 const onepan = new Meal(
