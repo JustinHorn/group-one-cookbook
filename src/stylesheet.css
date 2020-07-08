@@ -88,7 +88,6 @@ h3 {
 }
 
 [name="neo"] .logo-wrapper {
-  margin-top: 10px;
   display: flex;
   flex-direction: row;
 }
@@ -100,7 +99,8 @@ h3 {
 
 [name="neo"] .logo-wrapper h1 {
   font-size: 50px;
-  color: #393e46;
+  color: #FFFF;
+  text-shadow: 3px 2px 10px black;
   font-weight: bold;
   align-self: center;
   margin-left: 10px;
@@ -138,6 +138,7 @@ h3 {
   align-items: center;
   color: rgb(108, 117, 125);
 }
+
 
 
 
