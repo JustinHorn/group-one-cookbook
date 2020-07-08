@@ -5,6 +5,9 @@
   background-color: #393e46;
   color: white;
 }
+p , h1 , h3 {
+  color: #393e46;
+}
 
 [name="neo"] .nav-wrapper {
   display: flex;
@@ -32,7 +35,7 @@
 }
 */
 [name="neo"] .active-nav-link a {
-  color: #abf0e9 !important;
+  color: #e67070 !important;
 }
 /*dropdown*/
 [name="neo"] .dropdown .dropbtn {
@@ -51,7 +54,7 @@
 }
 [name="neo"] .dropdown:hover .dropbtn {
   background-color: inherit;
-  color: #abf0e9;
+  color: #e67070;
 }
 [name="neo"] .dropdown:hover .dropdown-content a {
   background-color: #393e46;
@@ -71,7 +74,7 @@
 */
 
 [name="neo"] .nav-link-wrapper a:hover {
-  color: #abf0e9;
+  color: #e67070;
 }
 
 /* Logo*/
@@ -100,6 +103,25 @@
   margin-left: 10px;
 }
 
+/* carousel*/
+
+
+.carousel-inner {
+    height: 50vh;
+    border-radius: 1%
+}
+
+
+.carousel-item img { 
+    background-size: cover;
+    background-position: center; 
+       
+}
+.carousel-item {
+  
+}
+
+
 /* BUttons */
 [name="neo"] .btn-wrapper {
   display: flex;
@@ -115,14 +137,16 @@
 /*Recipe Layout*/
 
 [name="neo"] .container-recipe-title {
-  background-color: #abf0e9;
+  background-color: #e67070;
   margin-top: 50px;
   box-shadow: 3px 3px 3px #888888;
+  
 }
 
 [name="neo"] .container-recipe-title h1 {
   margin-left: 50px;
   padding: 10px;
+  font-size: 35px;
 }
 
 [name="neo"] .container-main-content {
@@ -284,7 +308,7 @@
 }
 
 [name="jakub"] .about2 p {
-  padding-left: 1em;
+  
   text-align: justify;
 }
 [name="jakub"] .about,
@@ -430,6 +454,10 @@
   .pics {
     flex: 50%;
     max-width: 50%;
+
+  }
+  .carousel {
+    width: auto;
   }
 }
 @media screen and (max-width: 600px) {
@@ -454,6 +482,18 @@
   .logo-wrapper h1 {
     display: none;
   }
+  .carousel {
+    width: auto;
+  }
+  .disno{
+    display: none;
+  }
+}
+@media screen and (min-width: 990px) and (max-width: 1200px){
+.about2 p{
+  padding-left: 1em;
+}
+
 }
 
 .card-1 {
@@ -463,4 +503,9 @@
 
 .card-1:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.karta {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
