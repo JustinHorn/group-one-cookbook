@@ -42,6 +42,7 @@
   text-transform: uppercase;
   align-self: center;
 }
+
 [name="neo"] .dropdown-content {
   display: none;
   position: absolute;
@@ -108,9 +109,38 @@
 }
 
 [name="neo"] .btn {
-  font-size: 30px;
+  font-size: 12px;
+  border-radius: 50%;
   margin: 50px;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(108, 117, 125);
 }
+
+
+
+[name="neo"] .svg-icon {
+  
+  height: 50px;
+  width: 50px;
+  fill: rgb(108, 117, 125);
+}
+
+[name="neo"] .btn:hover .svg-icon
+{
+  fill: white;
+}
+
+[name="neo"] .btn-text
+{
+  font-weight: 700;
+}
+
 
 /*Recipe Layout*/
 
