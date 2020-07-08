@@ -9,13 +9,13 @@ document.getElementById("recipeName").innerHTML = recipe.name;
 document.getElementById("recipeImg").style.backgroundImage =
   "url(" + recipe.imgSrc + ")";
 
-recipe.ingredients.reverse().forEach((element) => {
+recipe.ingredients.forEach((element) => {
   const li = document.createElement("li");
   li.innerHTML = element;
   document.getElementById("ingredients").appendChild(li);
 });
 
-recipe.steps.reverse().forEach((element) => {
+recipe.steps.forEach((element) => {
   const li = document.createElement("li");
   li.innerHTML = element;
   document.getElementById("steps").appendChild(li);
