@@ -39,16 +39,17 @@ document.getElementById("otherRecipes").innerHTML =
 meals
   .filter((x) => x.mealType === recipe.mealType && x.name != recipe.name)
   .forEach((x) => {
-    const column1 = makeImageColumn(x);
-    const column2 = makeTextColumn(x);
+    const column = makeColumn(x);
 
-    document.getElementById("putMealsHere").appendChild(column1);
-    document.getElementById("putMealsHere").appendChild(column2);
+    document.getElementById("putMealsHere").appendChild(column);
   });
 
-function makeImageColumn(meal) {
-  const col1 = document.createElement("div");
-  col1.className = "col-md-4 col-8  d-flex justify-content-center ";
+function makeColumn(meal) {
+  const col = document.createElement("div");
+  col.className = "col-md-6 col-12";
+
+  const container = document.createElement("div");
+  container.className = "container p-3 border card-1 d-flex";
 
   const a = document.createElement("a");
   a.href = "recipeJs.html?name=" + meal.name;
@@ -56,27 +57,26 @@ function makeImageColumn(meal) {
   const img = document.createElement("img");
   img.src = meal.imgSrc;
   img.className = "card-1";
-  img.style.transform = "rotate(90deg)";
+  img.style.maxHeight = " 100px";
 
   a.appendChild(img);
 
-  col1.appendChild(a);
+  container.appendChild(a);
 
-  return col1;
-}
-
-function makeTextColumn(meal) {
-  const col2 = document.createElement("div");
-  col2.className = "col-md-2 col-4 ";
+  const innerContainer = document.createElement("div");
+  innerContainer.className = "container ";
 
   const h3 = document.createElement("h3");
   h3.innerHTML = meal.name;
 
-  col2.appendChild(h3);
+  innerContainer.appendChild(h3);
 
   const p = document.createElement("p");
   p.innerHTML = meal.description;
-  col2.appendChild(p);
+  innerContainer.appendChild(p);
 
-  return col2;
+  container.appendChild(innerContainer);
+
+  col.appendChild(container);
+  return col;
 }
