@@ -5,7 +5,9 @@
   background-color: #393e46;
   color: white;
 }
-p , h1 , h3 {
+p,
+h1,
+h3 {
   color: #393e46;
 }
 
@@ -105,20 +107,15 @@ p , h1 , h3 {
 
 /* carousel*/
 
-
 .carousel-inner {
-    height: 50vh;
-    border-radius: 1%
+  height: 50vh;
+  border-radius: 1%;
 }
 
-
-.carousel-item img { 
-    background-size: cover;
-    background-position: center; 
-       
+.carousel-item img {
+  background-size: cover;
+  background-position: center;
 }
-
-
 
 /* BUttons */
 [name="neo"] .btn-wrapper {
@@ -138,7 +135,6 @@ p , h1 , h3 {
   background-color: #e67070;
   margin-top: 50px;
   box-shadow: 3px 3px 3px #888888;
-  
 }
 
 [name="neo"] .container-recipe-title h1 {
@@ -190,123 +186,12 @@ p , h1 , h3 {
   padding: 20px;
 }
 
-[name="justin"] #slider {
-  margin: 0;
-  padding: 0;
-  background: #f1f1f1;
-  font-family: sans-serif;
-}
-
-[name="justin"] .fill {
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-}
-
-[name="justin"] .slider {
-  width: 100%;
-  height: 500px;
-  overflow: hidden;
-}
-[name="justin"] .slide {
-  width: 500%;
-  overflow: hidden;
-  animation: slider 20s infinite;
-}
-
-[name="justin"] .slide div {
-  width: 20%;
-  color: white;
-  font-size: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  float: left;
-  height: 500px;
-  text-transform: uppercase;
-}
-[name="justin"] .slide1 {
-  background: #e74c3c;
-  background-image: url("slider/img.jpg");
-}
-[name="justin"] .slide2 {
-  background: #3498db;
-  background-image: url("slider/img2.jpg");
-}
-[name="justin"] .slide3 {
-  background: #2ecc71;
-  background-image: url("slider/img3.jpg");
-}
-[name="justin"] .slide4 {
-  background: #9b59b6;
-  background-image: url("slider/img4.jpg");
-}
-
-[name="justin"] .slide5 {
-  background: #e74c3c;
-  background-image: url("slider/img.jpg");
-}
-
-@keyframes slider {
-  0% {
-    margin-left: 0;
-  }
-  10% {
-    margin-left: 0;
-  }
-  12% {
-    margin-left: -100%;
-  }
-  22% {
-    margin-left: -100%;
-  }
-  24% {
-    margin-left: -200%;
-  }
-  34% {
-    margin-left: -200%;
-  }
-  36% {
-    margin-left: -300%;
-  }
-  46% {
-    margin-left: -300%;
-  }
-  48% {
-    margin-left: -400%;
-  }
-  58% {
-    margin-left: -400%;
-  }
-  60% {
-    margin-left: -300%;
-  }
-  70% {
-    margin-left: -300%;
-  }
-  72% {
-    margin-left: -200%;
-  }
-  82% {
-    margin-left: -200%;
-  }
-  84% {
-    margin-left: -100%;
-  }
-  94% {
-    margin-left: -100%;
-  }
-  96% {
-    margin-left: 0;
-  }
-}
 /*about*/
 [name="jakub"] .chef {
   width: 20em;
 }
 
 [name="jakub"] .about2 p {
-  
   text-align: justify;
 }
 [name="jakub"] .about,
@@ -422,6 +307,7 @@ p , h1 , h3 {
 }
 
 .dropdown-content {
+  /*can probaly be deleted*/
   display: none;
   position: absolute;
   background-color: #f1f1f1;
@@ -452,7 +338,6 @@ p , h1 , h3 {
   .pics {
     flex: 50%;
     max-width: 50%;
-
   }
   .carousel {
     width: auto;
@@ -483,15 +368,14 @@ p , h1 , h3 {
   .carousel {
     width: auto;
   }
-  .disno{
+  .disno {
     display: none;
   }
 }
-@media screen and (min-width: 990px) and (max-width: 1200px){
-.about2 p{
-  padding-left: 1em;
-}
-
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+  .about2 p {
+    padding-left: 1em;
+  }
 }
 
 .card-1 {
