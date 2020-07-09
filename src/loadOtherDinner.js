@@ -1,5 +1,5 @@
 document.getElementById("otherRecipes").innerHTML =
-  "Check out other recipes from " + recipe.mealType;
+  "Other " + recipe.mealType.toLowerCase() + " recipes";
 
 const effectObjects = [];
 
@@ -53,16 +53,34 @@ function createColumn(recipe) {
 }
 
 function createContainer(recipe) {
+  const a = document.createElement("a");
+  a.style = "text-decoration:none;";
+  a.href = "recipeJs.html?name=" + recipe.name;
   const container = document.createElement("div");
-  container.className = "container p-3 border card-1 d-flex";
+  container.className = "container p-3 border card-1";
+
+  const row = document.createElement("div");
+  row.className = "row";
+
+  const col1 = document.createElement("div");
+  col1.className = "col col-sm-3 col-12";
+
+  const col2 = document.createElement("div");
+  col2.className = "col col-sm-9 col-12";
 
   const AImage = createAImage(recipe);
 
-  container.appendChild(AImage);
+  col1.appendChild(AImage);
 
   const innerContainer = createInnerContainer(recipe);
-  container.appendChild(innerContainer);
-  return container;
+  col2.appendChild(innerContainer);
+
+  row.appendChild(col1);
+  row.appendChild(col2);
+
+  container.appendChild(row);
+  a.appendChild(container);
+  return a;
 }
 
 function createAImage(recipe) {
@@ -72,15 +90,14 @@ function createAImage(recipe) {
   const img = document.createElement("img");
   img.src = recipe.imgSrc;
   img.className = "card-1";
-  img.style.maxHeight = " 100px";
+  img.style.maxHeight = "200px";
 
-  a.appendChild(img);
-  return a;
+  return img;
 }
 
 function createInnerContainer(recipe) {
   const innerContainer = document.createElement("div");
-  innerContainer.className = "container ";
+  innerContainer.className = "";
 
   const h3 = document.createElement("h3");
   h3.innerHTML = recipe.name;
