@@ -1,12 +1,22 @@
 const mealType = getMealType();
 document.getElementById("headline").innerHTML = mealType;
 
+const effectObjects = [];
+
 meals
   .filter((x) => x.mealType === mealType)
   .forEach((x) => {
-    const column = makeMealColumn(x);
+    const column = createMealColumn(x);
     document.getElementById("putMealsHere").appendChild(column);
+    effectObjects.push(column);
   });
+
+window.pageYOffset; // this is important for the animation dunno why - lg Justin
+
+effectObjects.forEach((x) => {
+  x.style.opacity = 1;
+  x.style.marginLeft = "0";
+});
 
 function getMealType() {
   let params = new URLSearchParams(location.search);
@@ -20,9 +30,11 @@ function getMealType() {
   return currentMealType;
 }
 
-function makeMealColumn(meal) {
+function createMealColumn(meal) {
   const div = document.createElement("div");
   div.className = "col-md-4 col-12 pics";
+  div.style =
+    "opacity: 0; margin-left:-200px; transition: opacity 4s,margin 4s;";
 
   const a = document.createElement("a");
   a.href = "recipeJs.html?name=" + meal.name;
