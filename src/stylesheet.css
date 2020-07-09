@@ -363,27 +363,57 @@ h3 {
   color: #abf0e9;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px)
+{
   [name="neo"] .btn {
-    margin: 15px;
+    margin: 5px;   
+  }
+
+  [name="neo"] .container-recipe-title h1 {
+    margin-left: 20px;
+    font-size: 30px;
+  }
+  
+  ol {
+  padding-inline-start: 25px;
+  }
+
+  .carousel {
+      height: 250px;
+  }
+
+  .container {
+    margin-top: 20px;
+  }
+
+
+}
+@media screen and (max-width: 800px) {
+  [name="neo"] .container-logo {
+    display: none;
   }
 
   [name="neo"] .container-main-content {
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: 50px;
+    margin: 20px 10px 20px 10px;  
+    
   }
-}
-@media screen and (max-width: 800px) {
   .pics {
     flex: 50%;
     max-width: 50%;
   }
+
+  .container-fluid {
+    margin-top: 20px;
+  }
+
   .carousel {
     width: auto;
   }
 }
 @media screen and (max-width: 600px) {
+  
   .pics {
     flex: 100%;
     max-width: 100%;
