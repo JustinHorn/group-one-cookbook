@@ -63,12 +63,12 @@ function createContainer(recipe) {
   row.className = "row";
 
   const col1 = document.createElement("div");
-  col1.className = "col col-sm-3 col-12";
+  col1.className = "col col-sm-3 col-12 d-flex";
 
   const col2 = document.createElement("div");
   col2.className = "col col-sm-9 col-12";
 
-  const AImage = createAImage(recipe);
+  const AImage = createImage(recipe);
 
   col1.appendChild(AImage);
 
@@ -83,13 +83,14 @@ function createContainer(recipe) {
   return a;
 }
 
-function createAImage(recipe) {
+function createImage(recipe) {
   const a = document.createElement("a");
   a.href = "recipeJs.html?name=" + recipe.name;
 
   const img = document.createElement("img");
   img.src = recipe.imgSrc;
-  img.className = "card-1";
+  img.classList.add("card-1");
+  img.classList.add("mx-auto");
   img.style.maxHeight = "200px";
 
   return img;
