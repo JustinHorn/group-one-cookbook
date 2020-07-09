@@ -34,7 +34,7 @@ function createMealColumn(meal) {
   const div = document.createElement("div");
   div.className = "col-md-4 col-12 pics";
   div.style =
-    "opacity: 0; margin-left:-200px; transition: opacity 4s,margin 4s;";
+    "opacity: 0; margin-left:-200px; transition: opacity 2s,margin 2s;";
 
   const a = document.createElement("a");
   a.href = "recipeJs.html?name=" + meal.name;

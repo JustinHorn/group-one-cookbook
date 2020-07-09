@@ -44,7 +44,7 @@ function createColumn(recipe) {
   const col = document.createElement("div");
   col.className = "col-md-6 col-12";
   col.style =
-    "opacity: 0; margin-left:-200px; transition: opacity 4s,margin 4s;";
+    "opacity: 0; margin-left:-200px; transition: opacity 3s,margin 3s;";
 
   const container = createContainer(recipe);
 
