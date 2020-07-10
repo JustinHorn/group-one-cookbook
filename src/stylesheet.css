@@ -134,7 +134,7 @@ h3 {
   width: 100px;
   height: 100px;
   background-color: transparent;
-  display: flex;
+  display: block;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -145,6 +145,7 @@ h3 {
   height: 50px;
   width: 50px;
   fill: rgb(108, 117, 125);
+  pointer-events: none;
 }
 
 [name="neo"] .btn:hover .svg-icon {
@@ -378,6 +379,9 @@ h3 {
   padding-inline-start: 25px;
   }
 
+  .carousel-inner {
+    height: 250px;
+  }
   .carousel {
       height: 250px;
   }

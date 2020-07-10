@@ -12,3 +12,13 @@ const dinnerSource = `<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc=
 document.getElementById("svgBreakfast").innerHTML = breakfastSource;
 document.getElementById("svgLunch").innerHTML = lunchSource;
 document.getElementById("svgDinner").innerHTML = dinnerSource;
+
+document.getElementById("Breakfast").addEventListener('touchstart', () => {
+    this.onclick();
+});
+document.getElementById("Lunch").addEventListener('touchstart', () => {
+    this.onclick();
+});
+document.getElementById("Dinner").addEventListener('touchstart', () => {
+    this.onclick();
+});
